@@ -1,0 +1,3 @@
+﻿  Net1_Client.cpp
+  main.cpp
+LINK : fatal error LNK1181: cannot open input file 'ncltech.lib'

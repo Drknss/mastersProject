@@ -1,0 +1,40 @@
+﻿  SphereCollisionShape.cpp
+  ObjectMesh.cpp
+  ScreenPicker.cpp
+  Scene.cpp
+  SceneRenderer.cpp
+  SceneManager.cpp
+  RenderList.cpp
+c:\users\m_a_t\documents\gametech_2017\build\ncltech\renderlist.cpp(145): error C2039: '_Pop_back_n': is not a member of 'std::vector<RenderList_Object,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=RenderList_Object
+          ]
+  c:\users\m_a_t\documents\gametech_2017\build\ncltech\renderlist.h(112): note: see declaration of 'std::vector<RenderList_Object,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=RenderList_Object
+          ]
+c:\users\m_a_t\documents\gametech_2017\build\ncltech\renderlist.cpp(145): error C2039: '__this': is not a member of 'std::vector<RenderList_Object,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=RenderList_Object
+          ]
+  c:\users\m_a_t\documents\gametech_2017\build\ncltech\renderlist.h(112): note: see declaration of 'std::vector<RenderList_Object,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=RenderList_Object
+          ]
+  PhysicsObject.cpp
+  PhysicsEngine.cpp
+  Manifold.cpp
+  Hull.cpp
+  Object.cpp
+  NCLDebug.cpp
+  ObjectMeshDragable.cpp
+  NetworkBase.cpp
+  CuboidCollisionShape.cpp
+  CommonUtils.cpp
+  CommonMeshes.cpp
+  CollisionDetectionSAT.cpp
+  Generating Code...

@@ -1,0 +1,9 @@
+﻿  TestScene.cpp
+c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\testscene.cpp(127): warning C4305: 'argument': truncation from 'double' to 'float'
+  solarScene.cpp
+c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\solarscene.cpp(78): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\solarscene.cpp(175): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+  planetScene.cpp
+  main.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'ncltech.lib'

@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\m_a_t\documents\gametech_2017\build\externallibs\enet\include\enet\enet.h(13): fatal error C1083: Cannot open include file: 'stdlib.h': No such file or directory
+  Net1_Client.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\crtdefs.h(10): fatal error C1083: Cannot open include file: 'corecrt.h': No such file or directory
+  Generating Code...

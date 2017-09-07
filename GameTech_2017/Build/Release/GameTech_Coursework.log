@@ -1,0 +1,8 @@
+﻿  nuralScene.cpp
+nuralScene.cpp(52): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+  Generating code
+  1 of 3459 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    10 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GameTech_Coursework.vcxproj -> C:\Users\m_a_t\Documents\GameTech_2017\Build\Release\GameTech_Coursework.exe
