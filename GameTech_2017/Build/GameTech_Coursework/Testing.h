@@ -7,6 +7,9 @@
 #include <vector>
 #include <iterator>
 #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
 
 #include "neuralNet.h"
 
@@ -20,6 +23,9 @@ enum shape {
 	square
 };
 
+
+
+
 class Testing
 {
 public:
@@ -32,6 +38,8 @@ public:
 	void Update(int iterations, int itCom, float fps, float ttc);
 	void readBMP(const string &file);
 
+	int LoadBmp(const string filepath);
+
 	void Training(float fps, float ttc);
 	void TestingNN(float fps, float ttc);
 
@@ -42,9 +50,19 @@ public:
 	void setTraining(bool t) { ctraining = t; }
 	void setSubRes(int r) { nnHidenRes = r; }
 
+	
+	double approxRollingAverage(double avg, double input) {
+		avg -= avg / 100;
+		avg += input / 100;
+		return avg;
+	}
+
+
+	bool createdNN;
 private:
 
 	bool ctraining;
+	
 
 	int nnInputs;
 	int imgWidth;
@@ -56,9 +74,9 @@ private:
 	int nnHidenRes;
 	int completedCycles;
 
-	int epoch;
-	int cGuess;
-	int eCount;
+	float epoch;
+	float cGuess;
+	float eCount;
 	float accPCent;
 
 	shape presented;
@@ -75,9 +93,10 @@ private:
 	vector <string> TestingCircles;
 	vector <string> TrainingCircles;
 
-	neuralNet* net;
+	
 
 	ofstream* filestr;
-
+	neuralNet net;
 };
+
 

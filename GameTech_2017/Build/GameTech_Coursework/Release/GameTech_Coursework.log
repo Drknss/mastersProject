@@ -1,16 +1,44 @@
 ﻿  Testing.cpp
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\hiddenNeuron.h(15): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\hiddenNeuron.h(20): warning C4018: '<': signed/unsigned mismatch
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\hiddenNeuron.h(30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\outputNeuron.h(12): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\outputNeuron.h(17): warning C4018: '<': signed/unsigned mismatch
-c:\users\m_a_t\documents\gametech_2017\build\gametech_coursework\outputNeuron.h(34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-Testing.cpp(329): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-Testing.cpp(334): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-Testing.cpp(391): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(16): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(30): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(13): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Testing.cpp(6): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Testing.cpp(331): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+Testing.cpp(392): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+Testing.cpp(463): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(16): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(30): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(13): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+main.cpp(75): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  neuralNet.cpp
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(16): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(30): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\hiddenNeuron.h(41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(13): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\m_a_t\documents\github\mastersproject\gametech_2017\build\gametech_coursework\outputNeuron.h(38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+neuralNet.cpp(42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+neuralNet.cpp(45): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+neuralNet.cpp(132): warning C4018: '<': signed/unsigned mismatch
+neuralNet.cpp(136): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+neuralNet.cpp(141): warning C4018: '<': signed/unsigned mismatch
+neuralNet.cpp(143): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Generating code
-  3 of 4352 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+  5 of 4325 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    25 functions had inline decision re-evaluated but remain unchanged
+    14 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  GameTech_Coursework.vcxproj -> C:\Users\m_a_t\Documents\GameTech_2017\Build\Release\GameTech_Coursework.exe
+  GameTech_Coursework.vcxproj -> C:\Users\m_a_t\Documents\GitHub\mastersProject\GameTech_2017\Build\Release\GameTech_Coursework.exe

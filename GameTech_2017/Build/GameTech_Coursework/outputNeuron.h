@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <time.h>
 
 using namespace std;
 
@@ -16,17 +17,20 @@ public:
 		float temp = 0;
 		for (int i = 0; i < input.size(); i++)
 		{
-			temp += input[i]->getHOutput() * weights[i];
+			temp += *input[i]->getHOutput() * weights[i];
 		}
+		temp = temp / input.size();
 		temp = temp * bias;
 
 		output = (1 / (1 + exp(-temp)));
 	};
 
-	double RandFloat() { return (rand()) / (RAND_MAX + 1.0); }
+	double RandFloat() {
+		srand(time(NULL));
+		return (rand()) / (RAND_MAX + 1.0); }
 	double RandomClamped() { return RandFloat() - RandFloat(); }
-	float getOOutput() { return output; }
-	int	getFitness() { return fitness; }
+	float* getOOutput() { return &output; }
+	int*	getFitness() { return &fitness; }
 
 	void modifyWeight(float weight, int id) { weights[id] += weight; }
 	void incFitness(int a) { fitness += a; }

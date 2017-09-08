@@ -8,7 +8,9 @@ class inputNeuron
 {
 public:
 	inputNeuron() {};
-	~inputNeuron() {};
+	~inputNeuron() {
+		rgbData.~Vector3();
+	};
 
 	void setPixelValues(Vector3 pixel) {		
 		rgbData = pixel;

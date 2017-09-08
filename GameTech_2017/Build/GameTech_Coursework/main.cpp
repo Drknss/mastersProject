@@ -7,6 +7,7 @@
 #include <ncltech\PerfTimer.h>
 
 #include "nuralScene.h"
+#include "neuralNet.h"
 #include "simpleNNScene.h"
 #include "AStar.h"
 #include "Testing.h"
@@ -149,41 +150,61 @@ void HandleKeyboardInputs()
 // Program Entry Point
 int main()
 {
-	//Initialize our Window, Physics, Scenes etc
-	Initialize();
 
-	Window::GetWindow().GetTimer()->GetTimedMS();
 
-	int fCount = 0;
-	string inp1;
-	string inp2;
-	int inp3;
-	int inp4;
-	
 	//Thorough Testing Stuff
-	Testing nuralNet;
+	Testing nNet;
 
 	int cSubRes = 2;
 	int maxSubRes = 100;
 	int iCounter = 0;
 
-	nuralNet.Initialize();
+	int fCount = 0;
+	string inp1;
+	string inp2;
+	string inp5;
+	bool tt = false;
+	int inp3;
+	int inp4;
+
+	
 
 	cout << "Please enter whether we are Training a NN or Loading a pre-created NN? T/Training or L/Load" << endl;
 	cin >> inp1;
-	if (inp1 == "T" || inp1 == "Training" || inp1 == "t" ) {
+	if (inp1 == "T" || inp1 == "Training" || inp1 == "t") {
 		isTraining = true;
 		cout << "Please enter the secondary resolution, THIS NUMBER MUST BE A FACTOR OF 2!! \n This number will be squared!!" << endl;
 		cin >> inp3;
 		cout << "Please enter the number of training cycles you wish the program to complete, this is recommended to be a factor of 100" << endl;
 		cin >> inp4;
-		
+		cout << "Thorough Testing? Continue increasing secondary res, or single test? T/Thorough or S/Single" << endl;
+		cin >> inp5;
+		if (inp5 == "T" || inp5 == "Thorough" || inp5 == "t") {
+			tt = false;
+		}
+		else {
+			tt = true;
+		}
+
 	}
 	if (inp1._Equal("L") || inp1._Equal("Load")) {
 		cout << "Please enter the file name of the NN to Load" << endl;
 		cin >> inp2;
 	}
 	
+	cSubRes = inp3;
+	nNet.setSubRes(inp3);
+	nNet.setTraining(true);
+	nNet.Initialize();
+
+	float ft = 0.f;
+	float nt = 0.f;
+	float ttt = 0.f;
+
+	//Initialize our Window, Physics, Scenes etc
+	Initialize();
+
+	Window::GetWindow().GetTimer()->GetTimedMS();	
 
 
 	//Create main game-loop
@@ -232,28 +253,42 @@ int main()
 		//	fCount = 0;
 		//}
 		//fCount++;
-
+		
 		timer_neuralNet.BeginTimingSection();
 		if (isTraining) {
 			if (cSubRes < maxSubRes) {				
 				if (iCounter < inp4) {
-					nuralNet.Update(inp4, iCounter, 1000.f / timer_total.GetAvg(), timer_neuralNet.GetAvg());
+					nNet.Update(inp4, iCounter, ft, nt);
 					iCounter++;
 				}
 				else if (iCounter >= inp4)
 				{
-					cSubRes += 2;
-					iCounter = 0;
-					nuralNet.~Testing();
-					nuralNet.setSubRes(cSubRes);
-					nuralNet.setTraining(true);
-					nuralNet.Initialize();
+					if (!tt) {
+						cSubRes += 2;
+						iCounter = 0;
+						//nNet.~Testing();
+						nNet.createdNN = false;
+						nNet.setSubRes(cSubRes);
+						nNet.setTraining(true);
+						nNet.Initialize();
+					}
+					else {
+						iCounter = 0;
+						nNet.setTraining(false);
+					}
 				}				
 			}
+		}
+		else {
+			//nNet.updateDataToFile(0, ft, ttt);
 		}
 		timer_neuralNet.EndTimingSection();
 		//Finish Timing
 		timer_total.EndTimingSection();
+
+		ft = 1000.f / timer_total.GetAvg();
+		nt = timer_neuralNet.GetAvg();
+		ttt = timer_total.GetAvg();
 
 		//Let other programs on the computer have some CPU time
 		Sleep(0);

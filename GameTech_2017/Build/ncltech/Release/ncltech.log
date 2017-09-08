@@ -1,2 +1,20 @@
-﻿  PhysicsEngine.cpp
-  ncltech.vcxproj -> C:\Users\m_a_t\Documents\GameTech_2017\Build\Release\ncltech.lib
+﻿  CollisionDetectionSAT.cpp
+  CommonMeshes.cpp
+  CommonUtils.cpp
+  CuboidCollisionShape.cpp
+  NetworkBase.cpp
+  ObjectMeshDragable.cpp
+  NCLDebug.cpp
+  Object.cpp
+  Hull.cpp
+  Manifold.cpp
+  PhysicsEngine.cpp
+  PhysicsObject.cpp
+  RenderList.cpp
+  SceneManager.cpp
+  SceneRenderer.cpp
+  Scene.cpp
+  ScreenPicker.cpp
+  ObjectMesh.cpp
+  SphereCollisionShape.cpp
+  ncltech.vcxproj -> C:\Users\m_a_t\Documents\GitHub\mastersProject\GameTech_2017\Build\Release\ncltech.lib
